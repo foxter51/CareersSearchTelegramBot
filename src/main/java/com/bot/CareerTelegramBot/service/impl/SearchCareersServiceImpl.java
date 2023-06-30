@@ -25,7 +25,7 @@ public class SearchCareersServiceImpl implements SearchCareersService {
 
                 for (var career : careers){
                     if(!Objects.requireNonNull(career.selectFirst("div.text-date")).ownText().trim()
-                            .equals("сьогодні")) break;
+                            .equals("today")) break;
 
                     var careerBuilder = new StringBuilder();
                     careerBuilder
